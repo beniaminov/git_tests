@@ -1,0 +1,129 @@
+img.bg {
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+@media (max-width: 1024px) {
+img.bg {
+	height: 100%;
+	width: auto;
+}
+}
+
+.textbox {
+    width: auto;
+	margin: 150px 40% auto 10%; 
+    padding: 20px;
+    background-color: rgba(192, 200, 210, 0.75);
+    color: #131e30;
+    font-family: 'Georgia', serif;
+}
+
+.textbox h1 {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.textbox p {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+
+.textbox a {
+    font-weight: 500;
+	color: #131e30;
+	text-decoration: underline;
+	padding: 0 3px;
+}
+
+.textbox a:hover {
+    background-color: #131e30;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+.textbox {
+	width: auto;
+	margin: 60% 30px auto;
+}
+}
+		
+.gamebox {
+    width: auto;
+	margin: 150px 40% auto 10%; 
+    padding: 20px;
+    background-color: rgba(192, 200, 210, 0.75);
+    color: #131e30;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+.gamebox h1 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.gamebox p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.gamebox a {
+	font-size: 18px;
+    font-weight: 500;
+	color: #131e30;
+	text-decoration: underline;
+	padding: 0 3px;
+}
+
+.gamebox a:hover {
+    background-color: #131e30;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+.gamebox {
+	width: auto;
+    margin: 60% 30px auto;
+}
+}
+
+.hidden{
+    display: none;
+}
+
+.unhidden{
+    display: block;
+}
+
+input {
+	font-family: 'Georgia', serif;
+	font-size: 14px;
+}
+
+input[type=button] {
+	border: 1px solid #131e30;
+	background-color: #131e30;
+    color: #fff;
+}
+
+input[type=text] {
+	border: 1px solid #fff;
+	background-color: #fff;
+    color: #131e30;
+}
+
+#field {
+	font-family: 'Georgia', serif;
+	font-size: 24px;
+}
