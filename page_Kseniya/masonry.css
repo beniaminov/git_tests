@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web|Poiret+One);
+body{
+  
+}
+
+.profile
+{
+    display:block;
+      width: 80%;
+    height: auto;
+    position: fixed;
+    top: 10px;
+    left: 400px;
+     font-size: 12pt;
+    font-family: 'Titillium Web', sans-serif;
+    color: #8b888b;
+    
+}
+
+.photo
+{
+    position: fixed;
+    top: 10px;
+    left: 700px;
+    border: 1px solid #e7e4e7;
+    width: 400px;
+    height: 400px;
+    alignment-baseline: central;
+     font-size: 12pt;
+    font-family: 'Titillium Web', sans-serif;
+    color: #8b888b;
+    
+}
+
+.topblock
+{   display:block;
+    width: 70%;
+    height:auto;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border: 1px ;
+
+    
+}
+
+.masonry{
+    margin: 1em 0;
+    padding: 0;
+    column-gap: 10em; /* Общее расстояние между колонками */
+    font-size: 12pt;
+    font-family: 'Titillium Web', sans-serif;
+    color: #8b888b;
+    -moz-column-gap: 3em; /* Расстояние между колонками для Firefox */
+    -webkit-column-gap: 10px; /* Расстояние между колонками  для Safari, Chrome и iOS */
+    -webkit-column-count: 3;
+}
+
+
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box; /* Изменения алгоритма расчета ширины и высоты элемента.*/
+    -moz-box-sizing: border-box; /* Для Firefox */ 
+    -webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */ 
+    /*box-shadow: 2px 2px 4px 0 #ccc; /* Внешняя тень плиток */
+     border: 1px solid #e7e4e7;
+     
+}
+.item a {
+   display: inherit;
+    transition: ease-in-out 0.7s;
+   text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Titillium Web', sans-serif;
+    color: #8b888b;
+    content: attr(popup);
+}
+
+.item a:before {
+  color: white;
+  content: attr(popup);
+  position: relative;
+  left: 120px;
+  bottom: -20px;
+  opacity: 0;
+  visibility: hidden;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  -webkit-transform: scale(1.1) translateX(0px) translateY(-10px) rotate(0deg);
+  -moz-transform: scale(1.1) translateX(0%) translateY(-10px) rotate(0deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+  font-size: 14pt;
+}
+
+.item a:hover:before{
+    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity: 1;
+  bottom: -20px;
+  left: 120px;
+  font-size: 14pt;
+  visibility: visible;
+}
+ 
+/* Стили ссылок при наведении */
+.item a:hover {
+    transition: ease-in-out 0.7s;
+    display: inherit;
+    background: #c6c5c6;
+    opacity: 0.7;
+    font-size: inherit;
+    color: inherit;
+    content: attr(popup);
+
+}
+img, iframe {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
